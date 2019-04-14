@@ -17,7 +17,6 @@
 |noun
 sap
 wind
-roast
 calm
 green
 sea
@@ -39,6 +38,22 @@ rock
 earth
 eye
 shell
+feast
+song
+wheat
+brow
+arm
+claw
+leaf
+dawn
+fawn
+lamb
+moon
+sun
+center
+god
+oracle
+cap
 
 |adjective
 yellow
@@ -51,6 +66,13 @@ fallen
 wild
 whirling
 inner
+quaking
+shining
+raised
+singed
+scorched
+laden
+painted
 
 |nameForm
 2@[y][y]
@@ -69,20 +91,21 @@ inner
 6@i
 5@o
 3@u
+y
+
+|yy
 2@ai
 2@ae
 1@au
 1@ui
 1@oi
 1@ui
-y
-w
 
 |sy
 [c][y]
 
 |syl
-[c][y][c]
+[c][coda]
 
 |c
 10@t
@@ -103,15 +126,43 @@ th
 ph
 ch
 sh
+zh
 z
 x
 10@[cluster]
 
+|coda
+3@[y][n]
+3@[yy]
+1@[yy][n]
+
+|n
+10@n
+8@l
+7@s
+5@r
+4@d
+4@g
+4@k
+2@c
+2@t
+2@p
+2@w
+2@f
+2@h
+v
+th
+ph
+ch
+sh
+zh
+z
+x
+j
+
 |cluster
 lh
 rh
-zh
-sy
 zy
 ty
 dy
@@ -128,3 +179,4 @@ kr
 cr
 gr
 tr
+[n][n]
