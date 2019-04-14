@@ -1,0 +1,131 @@
+|regionList
+[region][region]
+[region][region][region]
+[region][region][region][region]
+[region][region][region][region][region]
+[region][regionList]
+
+|region
+<region>[regionName][regionBody]</region>
+
+|regionName*1
+[name]
+
+
+|regionBody
+[climate][terrainList][faunaList]
+
+|climate
+<climate>[temperature]-[humidity], precipitation in [season]</climate>
+
+|temperature
+hot
+warm
+cool
+cold
+
+|humidity
+wet
+dry
+arid
+
+|season
+2@spring
+2@summer
+2@autumn
+2@winter
+early winter
+late winter
+early summer
+late summer
+
+|terrainList
+[terrain][terrain]
+2@[terrain][terrain][terrain]
+[terrain][terrain][terrain][terrain]
+[terrain][terrainList]
+
+|terrain
+<terrain>To the [direction], [terrainType]</terrain>
+
+|terrainType
+10@[slope], [groundCover]
+[size] lakes
+volcanoes
+sandy coastline
+rocky coastline
+
+|direction
+north
+south
+east
+west
+northeast
+southeast
+northwest
+southwest
+
+|slope
+steep
+flat
+
+|groundCover
+exposed rock
+3@tree cover
+stony brush
+scrub
+2@grasses
+grasses with scattered trees
+desert
+5@farmland
+
+|size
+small
+large
+
+|faunaList
+[fauna][fauna][fauna]
+[fauna][fauna][fauna][fauna]
+[fauna][fauna][fauna][fauna][fauna]
+[fauna][fauna][fauna][fauna][fauna][fauna]
+[fauna][faunaList]
+
+|fauna
+<fauna>[faunaBody]</fauna>
+
+|faunaBody
+16@[animal.plural]
+poisonous [animal.plural]
+venomous [animal.plural]
+enormous, lumbering [animal.plural]
+pygmy [animal.plural]
+talking [animal.plural]
+[adjective] [animal.plural]
+adorable [animal.plural]
+fast-moving [animal.plural]
+[animal]-like [animal.plural]
+colorful [animal.plural]
+nocturnal [animal.plural]
+shy, elusive [animal.plural]
+tame [animal.plural]
+chirping [animal.plural]
+
+|animal
+cat
+rabbit
+elephant
+snake
+horse
+rat
+spider
+frog
+toad
+fish
+sheep
+squirrel
+deer
+bear
+owl
+dog
+fox
+reindeer

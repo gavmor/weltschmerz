@@ -1,0 +1,222 @@
+|personList
+[personListMax3Levels]
+
+|personListMax3Levels
+[personListMax2Levels][personListMax2Levels]
+[personListMax2Levels][personListMax1Level][personListMax1Level]
+
+|personListMax2Levels
+[personListMax1Level][personListMax1Level][personListMax1Level]
+[personListMax1Level][personListMax1Level]
+
+|personListMax1Level
+[person][person][person][person][person][person][person]
+[person][person][person][person][person][person][person][person]
+[person][person][person][person][person][person][person][person][person]
+[person][person][person][person][person][person][person][person][person][person]
+
+|person
+<person>[personName][personBody]</person>
+
+|personName*50
+<name>[nameBody] [familyName:recur]</name>
+
+|personBody
+[homeland][profession][personPhysical][admiresList][despisesList]
+
+|homeland
+<homeland>[regionName:recur]</homeland>
+
+|profession
+<profession>[professionBody.capitalize]</profession>
+
+|professionBody
+cobbler
+tinker
+merchant
+thief
+ranger
+guard
+potter
+bartender
+innkeeper
+hostler
+mechanic
+miner
+farmer
+herder
+cartwright
+3@seller of [goods]
+3@maker of [goods]
+
+|goods
+clothes
+gold
+ore
+weapons
+bread
+wines
+meats
+
+|admiresList
+2@[admires]
+[admires][admires]
+[admires][admiresList]
+1@
+
+|admires
+<admires>[personName:recur][admiresReasonList]</admires>
+
+|admiresReasonList
+[admiresReason]
+[admiresReason][admiresReason]
+[admiresReason][admiresReason][admiresReason]
+
+|admiresReason
+<reason>[goodAttribute]</reason>
+
+|despisesList
+2@
+2@[despises]
+[despises][despises]
+[despises][despisesList]
+
+|despises
+<despises>[personName:recur][despisesReasonList]</despises>
+
+|despisesReasonList
+[despisesReason]
+[despisesReason][despisesReason]
+[despisesReason][despisesReason][despisesReason]
+
+|despisesReason
+<reason>[badAttribute]</reason>
+
+|personPhysical
+<physical>[stature.article.capitalize], [demeanor] [race]</physical>
+
+|race
+human
+man
+woman
+child
+boy
+girl
+elf
+young man
+young woman
+male elf
+elf-woman
+elf-child
+young elf
+dwarf
+young dwarf
+orc
+young orc
+half-elf
+
+|demeanor
+surly
+sour-faced
+drunken
+tippling
+red-faced
+grinning
+mischievous
+smiling
+warm-hearted
+wide-faced
+wide-eyed
+narrow-jawed
+argumentative
+placid
+calm
+sharp-eyed
+paranoid
+lascivious
+stupid
+well-dressed
+punchable
+fawning
+square-jawed
+round-faced
+dour
+grim
+steely-eyed
+witless
+wrinkled
+tight-lipped
+garrulous
+laconic
+loud
+quiet
+
+|stature
+tall
+hulking
+scrawny
+gangly
+short
+diminutive
+petite
+pimply
+battle-scarred
+brawny
+stout
+heavy
+fat
+slim
+lithe
+stooping
+hunchbacked
+pudgy
+poised
+
+|goodAttribute
+wisdom
+honesty
+beauty
+principled political views
+prowess in battle
+geniality
+charity
+intelligence
+ambition
+bravery
+courage
+shrewdness
+skill with weapons
+skill with a sword
+skill with a bow
+sense of humor
+wit
+generosity
+curiosity
+artistry
+innocence
+worldliness
+steadfastness
+faith
+strength
+principles
+
+|badAttribute
+naivete
+nasty habits
+brutishness
+ugliness
+cruelty
+insane political views
+religious dogma
+godlessness
+stupidity
+weakness
+utter spinelessness
+cowardice
+priggishness
+pedantry
+hypocrisy
+3@lack of [goodAttribute]
+
+|familyName*10
+[nameBody]
