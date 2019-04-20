@@ -5,16 +5,12 @@
 [nameForm.capitalize] ("[nameMeaning]")
 
 |nameMeaning
-[noun] of [noun]
-[noun] of [noun.plural]
-[adjective] [noun]
-[adjective] [noun.plural]
-[adjective] [noun.plural]
-[noun] [noun]
-[noun] [noun.plural]
-[noun.possessive] [noun]
+[modifier] [animate]
+4@[modifier] [evocation]
+[animate] of [evocation.plural]
+3@[evocation] [evocation]
 
-|noun
+|evocation
 sap
 wind
 calm
@@ -24,7 +20,6 @@ tree
 blood
 hand
 bone
-heart
 sand
 wood
 rose
@@ -36,14 +31,10 @@ rod
 stone
 rock
 earth
-eye
 shell
 feast
 song
 wheat
-brow
-arm
-claw
 leaf
 dawn
 fawn
@@ -51,11 +42,38 @@ lamb
 moon
 sun
 center
-god
-oracle
 cap
+ring
+pearl
+road
+mountain
+cloud
+shadow
+age
+touch
+death
+pain
 
-|adjective
+|animate
+eye
+hand
+arm
+god
+ranger
+oracle
+seer
+student
+lord
+brow
+claw
+heart
+sage
+fighter
+serpent
+scorpion
+soul
+
+|modifier
 yellow
 blue
 grey
@@ -73,17 +91,81 @@ singed
 scorched
 laden
 painted
+crowned
+ringed
+frozen
+striking
+vengeful
+winding
+stained
+open
 
 |nameForm
-2@[y][y]
-10@[sy][sy][sy]
-5@[sy][sy][syl]
-10@[sy][syl]
-10@[syl][syl]
-3@[y][sy][sy]
-3@[y][sy][syl]
-5@[sy][sy]
+// language 1
+1@[y][y]
+15@[sy][sy][sy]
+10@[sy][sy][syl]
+5@[sy][syl]
+5@[syl][syl]
+5@[y][sy][sy]
+5@[y][sy][syl]
+3@[sy][sy]
+// language 2
+22@[tek][tek]
+22@[tek][tek][tek]
+// language 3
+10@[cluster][v]-[cluster][v]
+10@[c][coda][cluster][v]
+10@[cluster][v][c][coda]
+10@[c][coda][c][coda]
 3@[nameForm]-[nameForm]
+// language 4
+22@[t][aa][t][aa][t][a][n]
+5@[t][aa][t][aa][t][aa]
+10@[aa][t][aa][t][a][n]
+
+|tek
+[t:recur][a:recur][k:recur]
+
+|t*2
+t
+k
+b
+g
+d
+m
+n
+l
+r
+z
+y
+j
+h
+
+|k*2
+k
+z
+x
+n
+m
+l
+r
+b
+g
+k
+
+|a
+5@a
+3@o
+5@e
+u
+2@i
+
+|aa
+10@a
+aa
+ii
+uu
 
 |y
 10@e
