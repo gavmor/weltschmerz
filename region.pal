@@ -13,7 +13,7 @@
 
 
 |regionBody
-[climate][terrainList][faunaList]
+[terrain][faunaList]
 
 |climate
 <climate>[temperature]-[humidity], precipitation in [season]</climate>
@@ -46,14 +46,75 @@ late summer
 [terrain][terrainList]
 
 |terrain
-<terrain>To the [direction], [terrainType]</terrain>
+3@<terrain>[terrainType] and [terrainType], [borderPresence]</terrain>
+<terrain>an archipelago of [number] [size] islands, mostly [terrainType] and [terrainType]</terrain>
+
+|number
+three
+four
+five
+six
+seven
+eight
+nine
+
+|borderPresence
+divided [axis] by [boundary]
+bordered to the [direction] by [boundary]
+half-surrounded by [boundary]
+
+|boundary
+an impassable mountain range
+mountains
+uninhabited deserts
+vast steppes
+snow-capped ridges
+high cliffs
+a huge canyon
+a wide river
+a large lake
+a vast desert
+a deep gorge
+a wild and forbidding forest
+deep jungle
+a pleasant-looking valley from which none have ever returned
+a narrow isthmus
+fjords
+volcanoes
+frozen wastes
+a glacier
+fissures in the earth
+a network of caves
 
 |terrainType
-10@[slope], [groundCover]
-[size] lakes
-volcanoes
+3@[slope] [groundCover]
+[groundCover] dotted with [terrainFeature]
+[groundCover] crisscrossed by [linearFeature]
 sandy coastline
 rocky coastline
+swamps
+
+|linearFeature
+rivers
+roads
+a vast trade network
+ley lines
+stone walls
+
+|terrainFeature
+lakes
+caves
+volcanoes
+geysers
+sinkholes
+ancient ruins
+buttes
+craters
+watchtowers
+
+|axis
+north-south
+east-west
 
 |direction
 north
@@ -68,64 +129,150 @@ southwest
 |slope
 steep
 flat
+hilly
+rugged
 
 |groundCover
 exposed rock
-3@tree cover
+woods
+rainforest
+jungle
+forest
 stony brush
-scrub
-2@grasses
-grasses with scattered trees
+scrublands
+grasslands
+savannah
 desert
-5@farmland
+3@farmland
 
 |size
 small
 large
 
 |faunaList
-[fauna][fauna][fauna]
-[fauna][fauna][fauna][fauna]
-[fauna][fauna][fauna][fauna][fauna]
-[fauna][fauna][fauna][fauna][fauna][fauna]
-[fauna][faunaList]
+[predator][prey][prey]
+[predator][prey][prey][prey]
+[predator][predator][prey][prey][prey]
+[predator][predator][prey][prey][prey][prey]
+[prey][faunaList]
 
-|fauna
-<fauna>[faunaBody]</fauna>
+|predator
+<fauna>[predatorBody]</fauna>
 
-|faunaBody
-16@[animal.plural]
-poisonous [animal.plural]
-venomous [animal.plural]
-enormous, lumbering [animal.plural]
-pygmy [animal.plural]
-talking [animal.plural]
-[adjective] [animal.plural]
-adorable [animal.plural]
-fast-moving [animal.plural]
-[animal]-like [animal.plural]
-colorful [animal.plural]
-nocturnal [animal.plural]
-shy, elusive [animal.plural]
-tame [animal.plural]
-chirping [animal.plural]
+|prey
+<fauna>[preyBody]</fauna>
+
+|predatorBody
+[predatorFeature] [predatorSpecies.plural]
+
+|predatorFeature
+10@[animalFeature]
+venomous
+giant
+wild
+talking
+adorable
+fast-moving
+silent but deadly
+[animal]-like
+colorful
+nocturnal
+elusive
+chirping
+barking
+carnivorous
+man-eating
+dire
+social
+intelligent
+aggressive
+hungry
+vicious
+
+|predatorSpecies
+[animal]
+
+|preyBody
+[animal.plural]
+[animalFeature] [animal.plural]
+
+|animalFeature
+poisonous
+enormous, lumbering
+pygmy
+talking
+[adjective]
+adorable
+fast-moving
+[animal]-like
+colorful
+nocturnal
+shy, elusive
+tame
+chirping
+barking
+squirming
+yelling
+amphibious
 
 |animal
+ant
+ape
+baboon
+badger
+bat
+beetle
+bison
+black bear
+brown bear
+boar
+camel
 cat
-rabbit
-elephant
-snake
-horse
-rat
-spider
-frog
-toad
-fish
-sheep
-squirrel
+cheetah
+crocodile
+crow
 deer
-bear
-owl
+dinosaur
 dog
+donkey
+eagle
+elephant
+frog
 fox
+grasshopper
+halibut
+hawk
+horse
+lemur
+leopard
+lion
+lizard
+mantis
+monitor lizard
+monkey
+mule
+octopus
+owl
+polar bear
+pony
+rabbit
+rat
+raven
 reindeer
+rhinoceros
+roc
+salmon
+shark
+sheep
+snake
+spider
+squid
+squirrel
+termite
+tiger
+toad
+viper
+weasel
+whale
+wolf
+wolverine
