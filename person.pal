@@ -33,7 +33,8 @@
 |professionBody
 cobbler
 tinker
-merchant
+[goods] merchant
+tailor
 thief
 ranger
 guard
@@ -45,7 +46,23 @@ mechanic
 miner
 farmer
 herder
+sailor
+laborer
+runner
+clerk
+priest
+architect
+shipwright
 cartwright
+miner
+soldier
+artist
+mason
+musician
+blacksmith
+goldsmith
+jeweler
+prostitute
 3@seller of [goods]
 3@maker of [goods]
 
@@ -57,6 +74,7 @@ weapons
 bread
 wines
 meats
+gems
 
 |admiresList
 2@[admires]
@@ -93,20 +111,33 @@ meats
 <reason>[badAttribute]</reason>
 
 |personPhysical
-<physical>[stature.article.capitalize], [demeanor] [race]</physical>
+<physical>[stature.article.capitalize], [demeanor], [maleHair] [maleRace]</physical>
+<physical>[stature.article.capitalize], [demeanor], [maleFace] [maleRace]</physical>
+<physical>[stature.article.capitalize], [demeanor], [femaleHair] [femaleRace]</physical>
+<physical>[stature.article.capitalize], [demeanor], [femaleFace] [femaleRace]</physical>
+<physical>[stature.article.capitalize], [demeanor], [neutralHair] [neutralRace]</physical>
+<physical>[stature.article.capitalize], [demeanor], [neutralFace] [neutralRace]</physical>
 
-|race
-human
+|maleRace
+11@[neutralRace]
 man
-woman
-child
-boy
-girl
-elf
 young man
-young woman
 male elf
+old man
+
+|femaleRace
+11@[neutralRace]
 elf-woman
+woman
+girl
+young woman
+old woman
+
+|neutralRace
+human
+boy
+child
+elf
 elf-child
 young elf
 dwarf
@@ -114,6 +145,49 @@ young dwarf
 orc
 young orc
 half-elf
+old elf
+old dwarf
+
+|maleFace
+10@[face]
+bearded
+scruffy
+
+|femaleFace
+[face]
+
+|neutralFace
+[face]
+
+|face
+wide-faced
+narrow-jawed
+punchable
+freckled
+bespectacled
+pimply
+pock-marked
+battle-scarred
+pudgy
+dirty
+
+|maleHair
+5@[hair]
+bald
+balding
+
+|femaleHair
+[hair]
+
+|neutralHair
+[hair]
+
+|hair
+redheaded
+blond
+brown-haired
+black-haired
+white-haired
 
 |demeanor
 surly
@@ -125,9 +199,7 @@ grinning
 mischievous
 smiling
 warm-hearted
-wide-faced
 wide-eyed
-narrow-jawed
 argumentative
 placid
 calm
@@ -135,7 +207,6 @@ sharp-eyed
 paranoid
 lascivious
 stupid
-punchable
 fawning
 square-jawed
 round-faced
@@ -149,17 +220,17 @@ garrulous
 laconic
 loud
 quiet
-redheaded
-blond
-brown-haired
-black-haired
 wild
 witty
-white-haired
 energetic
 melancholy
 inquisitive
 sneering
+laid-back
+proud
+stern
+relaxed
+inscrutable
 
 |stature
 tall
@@ -169,8 +240,6 @@ gangly
 short
 diminutive
 petite
-pimply
-battle-scarred
 brawny
 stout
 heavy
@@ -179,16 +248,14 @@ slim
 lithe
 stooping
 hunchbacked
-pudgy
 poised
 shaggy
 prim
 well-dressed
-laid-back
 rugged
 unkempt
-dirty
 clean-faced
+voluptuous
 
 |goodAttribute
 wisdom
@@ -217,6 +284,7 @@ steadfastness
 faith
 strength
 principles
+musical talent
 
 |badAttribute
 naivete
@@ -234,6 +302,7 @@ cowardice
 priggishness
 pedantry
 hypocrisy
+stinginess
 3@lack of [goodAttribute]
 
 |familyName*10
