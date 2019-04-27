@@ -1,0 +1,11 @@
+location: dependencies
+sources:
+- name: palettes
+  type: git
+  repo: https://github.com/gavmor/dunmanifestin-palettes
+  sparse_paths:
+  - fantasy/*
+  rev: master
+  link:
+  scripts:
+  -

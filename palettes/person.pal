@@ -20,6 +20,9 @@
 
 |personName*50
 <name>[nameBody] [familyName:recur]</name>
+<name>[welshName] [familyName:recur]</name>
+<name>[finnishName] [familyName:recur]</name>
+<name>[englishName] [familyName:recur]</name>
 
 |personBody
 [homeland][profession][personPhysical][admiresList][despisesList]
