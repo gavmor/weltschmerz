@@ -9,3 +9,13 @@ sources:
   link:
   scripts:
   -
+sources_locked:
+- name: palettes
+  type: git
+  repo: https://github.com/gavmor/dunmanifestin-palettes
+  sparse_paths:
+  - fantasy/*
+  rev: 075b573224849c538749e4ba4623c5734784afc2
+  link:
+  scripts:
+  -
