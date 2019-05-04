@@ -7,6 +7,9 @@ Generates an entire fantasy world, in XML format, using [Dunmanifestin](https://
 1. Clone this repo.
 1. [Install Dunmanifestin](https://github.com/gavmor/dunmanifestin).
 1. ```
-   xmllint --format <(dunmanifestin -g \
-      ./dependencies/palettes/fantasy:./palettes)
+   xmllint --format <( \
+     dunmanifestin \
+     -g ./dependencies/palettes/fantasy:./palettes \
+     -f ./palettes/welt.xml \
+    )
    ```
