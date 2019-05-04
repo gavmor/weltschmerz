@@ -25,49 +25,13 @@
 <name>[englishName] [familyName:recur]</name>
 
 |personBody
-[homeland][profession][personPhysical][admiresList][despisesList]
+[homeland][professionNode][personPhysical][admiresList][despisesList]
+
+|professionNode
+<profession>[profession.capitalize]</profession>
 
 |homeland
 <homeland>[regionName:recur]</homeland>
-
-|profession
-<profession>[professionBody.capitalize]</profession>
-
-|professionBody
-cobbler
-tinker
-[goods] merchant
-tailor
-thief
-ranger
-guard
-potter
-bartender
-innkeeper
-hostler
-mechanic
-miner
-farmer
-herder
-sailor
-laborer
-runner
-clerk
-priest
-architect
-shipwright
-cartwright
-miner
-soldier
-artist
-mason
-musician
-blacksmith
-goldsmith
-jeweler
-prostitute
-3@seller of [goods]
-3@maker of [goods]
 
 |goods
 clothes

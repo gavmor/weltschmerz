@@ -5,6 +5,7 @@ sources:
   repo: https://github.com/gavmor/dunmanifestin-palettes
   sparse_paths:
   - fantasy/*
+  - modern/*
   rev: master
   link:
   scripts:
